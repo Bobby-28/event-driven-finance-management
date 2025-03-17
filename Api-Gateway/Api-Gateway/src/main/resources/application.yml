@@ -1,0 +1,47 @@
+server:
+  port: 7075
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: USER-SERVICE
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/api/v1/users/**
+
+        - id: TOKEN-SERVICE
+          uri: lb://TOKEN-SERVICE
+          predicates:
+            - Path=/api/v1/token/**
+
+        - id: GOAL-SERVICE
+          uri: lb://GOAL-SERVICE
+          predicates:
+            - Path=/api/v1/goal/**
+
+        - id: TRANSACTION-SERVICE
+          uri: lb://TRANSACTION-SERVICE
+          predicates:
+            - Path=/api/v1/transaction/**
+
+        - id: BUDGET-SERVICE
+          uri: lb://BUDGET-SERVICE
+          predicates:
+            - Path=/api/v1/budget/**
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.web: DEBUG
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka

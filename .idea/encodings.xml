@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Api-Gateway/Api-Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Api-Gateway/Api-Gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Budget-Service/Budget-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Budget-Service/Budget-Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Goal-Service/Goal-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Goal-Service/Goal-Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Message-Service/Message-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Registry/Registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Registry/Registry/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Token-Service/Token-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Token-Service/Token-Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Transaction-Service/Transaction-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Transaction-Service/Transaction-Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/User-Service/User-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/User-Service/User-Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-consumer/user-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-consumer/user-consumer/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
