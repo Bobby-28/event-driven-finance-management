@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Bobby-28/event-driven-finance-management.git'
+                git branch: 'main', url: 'https://github.com/Bobby-28/event-driven-finance-management.git'
             }
         }
         stage('Build') {
