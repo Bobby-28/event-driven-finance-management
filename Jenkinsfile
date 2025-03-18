@@ -1,5 +1,11 @@
 pipeline {
     agent any
+
+    tools {
+        maven 'Maven-3.8.6'  // Ensure Maven is installed in Jenkins
+        jdk 'JDK-17'         // Ensure Java is installed in Jenkins
+    }
+
     stages {
         stage('Checkout Code') {
             steps {
@@ -8,13 +14,30 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                bat 'mvn test'
             }
+        }
+        stage('Archive Artifact') {
+            steps {
+                archiveArtifacts artifacts: 'target\\*.jar', fingerprint: true
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "Build & Test Successful 🎉"
+        }
+        failure {
+            echo "Build or Test Failed ❌"
+        }
+        always {
+            cleanWs() // Cleans up the workspace after the build
         }
     }
 }
